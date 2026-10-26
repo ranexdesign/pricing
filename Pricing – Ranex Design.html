@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pricing – Ranex Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4fb;--surface:#ffffff;--ink:#1e1b2e;--muted:#6b6780;--accent:#6c4cf1;--line:#e2deef;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14121f;--surface:#1d1a2d;--ink:#f3f0ff;--muted:#a29dbb;--accent:#9b85ff;--line:#2e2a45}}
+:root[data-theme="dark"]{--bg:#14121f;--surface:#1d1a2d;--ink:#f3f0ff;--muted:#a29dbb;--accent:#9b85ff;--line:#2e2a45}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{padding:72px 0 40px}
+header small{color:var(--muted);font-weight:600}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:-.03em;line-height:1.05;margin:10px 0 12px;font-weight:800}
+header p{margin:0;color:var(--muted);font-size:1.1rem;max-width:30em}
+h2{font-size:.95rem;color:var(--muted);font-weight:600;margin:56px 0 18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column}
+.card h3{margin:0 0 14px;font-size:1.05rem;font-weight:600}
+.p{font-size:2.2rem;font-weight:800;letter-spacing:-.03em;line-height:1}
+.m{color:var(--muted);font-size:.9rem;margin-top:6px}
+.card ul{list-style:none;margin:18px 0 22px;padding:18px 0 0;border-top:1px solid var(--line);display:grid;gap:8px;color:var(--muted);font-size:.95rem;flex:1}
+.go{font-weight:600;font-size:.95rem;color:var(--accent);border-bottom:2px solid var(--accent);align-self:flex-start;white-space:nowrap;padding-bottom:1px}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:20px;align-items:center;padding:18px 24px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row.s{grid-template-columns:1fr auto}
+.row b{display:block;font-weight:600}
+.row span{color:var(--muted);font-size:.9rem}
+.rp{font-weight:800;font-size:1.15rem}
+.row .go{justify-self:end}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.cq{padding:24px;border:1px dashed var(--line);border-radius:20px;display:grid;gap:10px;justify-items:start}
+.cq b{font-size:1.05rem}.cq span{color:var(--muted)}
+.terms{margin:0;padding:0 0 0 18px;color:var(--muted);display:grid;gap:6px;font-size:.95rem}
+footer{margin-top:64px;border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media (max-width:800px){.cards,.two{grid-template-columns:1fr}.row{grid-template-columns:1fr auto}.row .go{grid-column:1/-1;justify-self:start}}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+nav b{font-weight:800;letter-spacing:-.02em}
+nav .links{display:flex;gap:24px;font-weight:600;font-size:.95rem;align-items:center}
+.pill{background:var(--ink);color:var(--bg);padding:9px 18px;border-radius:999px;font-weight:600}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+header{padding:96px 0 32px}
+.cta{display:inline-block;margin-top:28px;font-size:1rem}
+.contact{padding:24px 0 0;text-align:left}
+.contact h2{font-size:clamp(1.8rem,5vw,3rem);color:var(--ink);letter-spacing:-.03em;font-weight:800;margin:56px 0 12px;line-height:1.1}
+.contact p{color:var(--muted);margin:0 0 20px;max-width:28em}
+@media (max-width:640px){nav .links a:not(.pill){display:none}}
+.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btns .cta{margin-top:0}.contact .btns{margin-top:0}footer a{color:var(--ink);font-weight:600}.u{color:var(--muted);font-weight:600;margin-top:6px}.rp{text-align:right}.rp small{display:block;color:var(--muted);font-weight:600;font-size:.8rem}.note{margin:0 0 8px;color:var(--muted);font-size:.9rem}.p{font-size:2.6rem}.u{font-size:.9rem}.rp{font-size:1.5rem;letter-spacing:-.02em}.rp small{font-size:.8rem;letter-spacing:0}.kl{color:var(--muted);font-size:.85rem;font-weight:600;margin-bottom:8px}.ctas{display:flex;gap:8px;flex-wrap:wrap}.cb{background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:999px;font-weight:600;font-size:.9rem}.cb.o{background:transparent;color:var(--ink);border:1px solid var(--line)}.row .ctas{justify-self:end}@media (max-width:800px){.row .ctas{grid-column:1/-1;justify-self:start}}html{-webkit-text-size-adjust:100%}body{overflow-x:hidden}.card,.row>*,.cq{min-width:0}.row b,.card h3{overflow-wrap:anywhere}.wrap{width:100%}
+@media (min-width:1200px){.wrap{max-width:1040px}.card{padding:30px}}
+@media (min-width:801px) and (max-width:1000px){.cards{gap:12px}.card{padding:22px 18px}.p{font-size:2.2rem}.card ul{font-size:.9rem}.cb{padding:9px 13px}}
+@media (max-width:800px){.cards{max-width:560px;margin-inline:auto}.list,.cq{max-width:560px;margin-inline:auto}.terms{max-width:560px;margin-inline:auto}h2{max-width:560px;margin-inline:auto}.note{max-width:560px;margin-inline:auto}header .wrap,.contact{max-width:560px;margin-inline:auto}header{padding:64px 0 24px}header .wrap{padding:0 24px}}
+@media (max-width:640px){.wrap{padding:0 20px}header{padding:48px 0 16px}header .wrap{padding:0 20px}h2{margin:44px auto 14px}nav .wrap{height:58px}.cb,.pill{min-height:44px;display:inline-flex;align-items:center;justify-content:center}}
+@media (max-width:480px){.btns{flex-direction:column;align-items:stretch}.btns .pill{width:100%}.ctas{width:100%}.ctas .cb{flex:1;text-align:center}.row{padding:16px 18px;gap:12px}.row .ctas{width:100%}.card{padding:22px 20px}.p{font-size:2.3rem}.rp{font-size:1.3rem}.cq{padding:20px}footer .wrap{flex-direction:column;gap:6px}.contact h2{margin-top:44px}}
+@media (max-width:360px){nav b{font-size:.95rem}nav .pill{padding:8px 14px;font-size:.9rem}h1{font-size:2rem}}
+</style></head><body>
+<nav><div class="wrap"><b>Ranex Design</b><div class="links"><a href="#uiux">UI/UX</a><a href="#social">Social media</a><a href="#terms">Terms</a><a class="pill" href="https://wa.me/917740033296?text=Hi!%20I%20have%20a%20project%20in%20mind." target="_blank" rel="noopener">WhatsApp</a></div></div></nav>
+<header><div class="wrap"><small>Ranex Design · Introductory pricing 2026</small><h1>Pricing</h1><p>Clear deliverables, one-time fees. Message me on WhatsApp or email for the exact quote.</p><div class="btns"><a class="pill cta" href="https://wa.me/917740033296?text=Hi!%20I%20have%20a%20project%20in%20mind." target="_blank" rel="noopener">Chat on WhatsApp</a><a class="pill cta ghost" href="mailto:ranex.design@gmail.com?subject=Project%20enquiry&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing.">Email me</a></div></div></header>
+<main class="wrap">
+<p class="note">USD amounts are approximate (₹96.5 = $1) and may vary with the exchange rate. Indian clients are billed in INR.</p><h2 id="uiux">UI/UX &amp; website design</h2>
+<div class="cards"><article class="card"><h3>Landing Page Design</h3><div class="p">$52</div><div class="u">₹4,999 INR</div><div class="m">4–5 days delivery</div><ul><li>Up to 5 sections</li><li>Desktop and mobile layouts</li><li>Wireframes, type and colour system</li><li>Figma prototype and handoff</li><li>2 revision rounds</li></ul><div class="kl">Know exact pricing</div><div class="ctas"><a class="cb" href="https://wa.me/917740033296?text=Hi%21%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Landing%20Page%20Design." target="_blank" rel="noopener">WhatsApp</a><a class="cb o" href="mailto:ranex.design@gmail.com?subject=Pricing%20enquiry%20%E2%80%93%20Landing%20Page%20Design&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Landing%20Page%20Design.">Email</a></div></article><article class="card"><h3>Website UI/UX Design</h3><div class="p">$124</div><div class="u">₹11,999 INR</div><div class="m">7–10 days delivery</div><ul><li>Up to 5 website pages</li><li>Desktop and mobile layouts</li><li>User flows and wireframes</li><li>High-fidelity UI and prototype</li><li>Basic design system</li><li>2 revision rounds, developer handoff</li></ul><div class="kl">Know exact pricing</div><div class="ctas"><a class="cb" href="https://wa.me/917740033296?text=Hi%21%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Website%20UI/UX%20Design." target="_blank" rel="noopener">WhatsApp</a><a class="cb o" href="mailto:ranex.design@gmail.com?subject=Pricing%20enquiry%20%E2%80%93%20Website%20UI/UX%20Design&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Website%20UI/UX%20Design.">Email</a></div></article><article class="card"><h3>Mobile App UI/UX Design</h3><div class="p">$207</div><div class="u">₹19,999 INR</div><div class="m">10–14 days delivery</div><ul><li>Up to 10 mobile screens</li><li>User flows and wireframes</li><li>High-fidelity UI and prototype</li><li>Basic design system</li><li>2 revision rounds, developer handoff</li></ul><div class="kl">Know exact pricing</div><div class="ctas"><a class="cb" href="https://wa.me/917740033296?text=Hi%21%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Mobile%20App%20UI/UX%20Design." target="_blank" rel="noopener">WhatsApp</a><a class="cb o" href="mailto:ranex.design@gmail.com?subject=Pricing%20enquiry%20%E2%80%93%20Mobile%20App%20UI/UX%20Design&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Mobile%20App%20UI/UX%20Design.">Email</a></div></article></div>
+<h2 id="social">Social media creatives</h2>
+<div class="list"><div class="row"><div><b>Basic Weekly</b><span>3 posts · 2 stories · 1 revision</span></div><div class="rp">$7<small>₹699 INR</small></div><div class="ctas"><a class="cb" href="https://wa.me/917740033296?text=Hi%21%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Basic%20Weekly." target="_blank" rel="noopener">WhatsApp</a><a class="cb o" href="mailto:ranex.design@gmail.com?subject=Pricing%20enquiry%20%E2%80%93%20Basic%20Weekly&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Basic%20Weekly.">Email</a></div></div><div class="row"><div><b>Standard Weekly</b><span>5 posts · 3 stories · 1 carousel · 2 revisions</span></div><div class="rp">$10<small>₹999 INR</small></div><div class="ctas"><a class="cb" href="https://wa.me/917740033296?text=Hi%21%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Standard%20Weekly." target="_blank" rel="noopener">WhatsApp</a><a class="cb o" href="mailto:ranex.design@gmail.com?subject=Pricing%20enquiry%20%E2%80%93%20Standard%20Weekly&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Standard%20Weekly.">Email</a></div></div><div class="row"><div><b>Basic Monthly</b><span>8 posts · 4 stories · 2 revisions</span></div><div class="rp">$26<small>₹2,499 INR</small></div><div class="ctas"><a class="cb" href="https://wa.me/917740033296?text=Hi%21%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Basic%20Monthly." target="_blank" rel="noopener">WhatsApp</a><a class="cb o" href="mailto:ranex.design@gmail.com?subject=Pricing%20enquiry%20%E2%80%93%20Basic%20Monthly&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Basic%20Monthly.">Email</a></div></div><div class="row"><div><b>Standard Monthly</b><span>12 posts · 8 stories · 2 carousels · 2 revisions</span></div><div class="rp">$41<small>₹3,999 INR</small></div><div class="ctas"><a class="cb" href="https://wa.me/917740033296?text=Hi%21%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Standard%20Monthly." target="_blank" rel="noopener">WhatsApp</a><a class="cb o" href="mailto:ranex.design@gmail.com?subject=Pricing%20enquiry%20%E2%80%93%20Standard%20Monthly&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Standard%20Monthly.">Email</a></div></div><div class="row"><div><b>Premium Monthly</b><span>16 posts · 12 stories · 4 carousels · 2 revisions</span></div><div class="rp">$62<small>₹5,999 INR</small></div><div class="ctas"><a class="cb" href="https://wa.me/917740033296?text=Hi%21%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Premium%20Monthly." target="_blank" rel="noopener">WhatsApp</a><a class="cb o" href="mailto:ranex.design@gmail.com?subject=Pricing%20enquiry%20%E2%80%93%20Premium%20Monthly&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20Premium%20Monthly.">Email</a></div></div></div>
+<div style="margin-top:16px"><div class="cq"><b>Need a custom plan?</b><span>Packages can be adjusted for your content volume, brand and campaign scope.</span><a class="go" href="https://wa.me/917740033296?text=Hi%21%20I%20would%20like%20to%20know%20the%20exact%20pricing%20for%20a%20custom%20plan." target="_blank" rel="noopener">Ask for a custom quote</a> <a class="go" href="mailto:ranex.design@gmail.com?subject=Custom%20quote">or email</a></div>
+</div>
+<h2 id="terms">Terms</h2>
+<ul class="terms"><li>UI/UX: 50% advance, 50% before final handoff.</li><li>Social media packages: full advance payment.</li><li>Client provides content, copy, logos and images.</li><li>Development, posting and account management are not included.</li><li>Prices are introductory and may change with scope.</li></ul>
+<section class="contact" id="contact"><h2>Have a project in mind?</h2><p>Let’s create something meaningful together. Message me on WhatsApp or email to discuss it.</p><div class="btns"><a class="pill" href="https://wa.me/917740033296?text=Hi!%20I%20have%20a%20project%20in%20mind." target="_blank" rel="noopener">Chat on WhatsApp</a><a class="pill ghost" href="mailto:ranex.design@gmail.com?subject=Project%20enquiry&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing.">Email me</a></div><p style="margin:16px 0 0;font-size:.95rem">No WhatsApp? Write to <a href="mailto:ranex.design@gmail.com?subject=Project%20enquiry&body=Hi%2C%20I%20would%20like%20to%20know%20the%20exact%20pricing." style="color:var(--accent);font-weight:600">ranex.design@gmail.com</a></p></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Ranex Design</span><a href="mailto:ranex.design@gmail.com">ranex.design@gmail.com</a></div></footer>
+</body></html>
